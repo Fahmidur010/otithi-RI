@@ -11,13 +11,13 @@ Phasestep progress tracker. Update during builds; `/complete-phase` marks phases
 Rolling snapshot for mid-session resume. **Overwrite** the fenced block on each material gate (`/build-phase` → intent → `/verify-phase` → `/refine-phase` → `/complete-phase`). Do not append history here — use **Session log** for that.
 
 ```text
-Phase: — (slug — Title; legacy Phase N ok)
+Phase: site-foundation — Site foundation
 Step: —
-Status: idle
-Verified steps: none
+Status: complete
+Verified steps: all (1–6)
 Open rejects / fails: none
-Evidence: none
-Next: /plan-phase site-foundation
+Evidence: owner_uat + playwright-cli
+Next: /plan-phase home-about (and/or /pr-step update; GitFlow may then /pr-step release)
 Updated: 2026-11-25
 ```
 
@@ -84,9 +84,7 @@ Offered at `/setup` Finish (Connect now / Skip). Re-run `/github-connect` anytim
 ```text
 GitHub: connected — Fahmidur010/otithi-RI (origin) — 2026-11-25
 GitHub workflow: gitflow — 2026-11-25
-GitHub: skipped at setup — YYYY-MM-DD
-GitHub PR: update [phase N step S] → main — branch … — status merged — date
-GitHub PR: update feature/phase-slug → develop — status merged — date
+GitHub PR: update feature/phase-site-foundation → develop — status merged — 2026-11-25
 GitHub: release promoted — develop → release — date
 GitHub: main promoted — release → main — tag vX.Y.Z — date
 GitHub: hotfix login-timeout → release + develop — status merged — date
@@ -113,7 +111,7 @@ Status: `[ ]` not started · `[~]` in progress · `[x]` done
 Status: `[ ]` not started · `[~]` in progress · `[x]` done
 
 ### site-foundation — Site foundation
-- [ ] not started
+- [x] complete — 2026-11-25 (steps 1–6 verified; audit-ds + audit-phase clean)
 
 ### home-about — Home & About
 - [ ] not started
@@ -142,4 +140,20 @@ Status: `[ ]` not started · `[~]` in progress · `[x]` done
 
 | Date | Module | Summary | Left unfinished |
 |------|--------|---------|-----------------|
-| | | | |
+| 2026-11-25 | site-foundation | Scaffold complete: tokens/base/components, live-site images, index+about chrome stubs, mobile nav + EN/BN, preview + check. Light polish + surface-glass token. Audits clean (DS + phase). | none — next `/plan-phase home-about` |
+
+### Phase remainder — site-foundation — Site foundation
+
+| Kind | Item | Notes |
+|------|------|-------|
+| Still open | none | |
+| Deferred | D4 — Vercel root vs `public/` | Decide in `vercel-ship` |
+| Out of scope | Full Home/About content; destinations/festivals/booking/gallery/FAQ; full EN/BN copy; Tailwind; Vercel | Per BUILD_PLAN / phase plan |
+| Carry into next | Composed Home hero + promise; About concept/impact; reuse vendored images + chrome | Seeds for `home-about` |
+| Lessons encoded | none | |
+
+**Next-phase seeds (`home-about`):**
+- Composed Home hero (image leads section, not full-viewport wallpaper) using vendored photography
+- One-line promise + clear paths to Destinations + Book and Festivals
+- About: concise Otithi concept / community impact (no empty sections)
+- Keep duplicated header/footer + sari-border section titles; expand i18n only for page strings as needed (full BN later)

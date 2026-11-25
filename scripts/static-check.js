@@ -31,7 +31,8 @@ const always = [
 
 always.forEach(requireFile);
 
-const siteStarted = exists("index.html") || exists("assets/css/tokens.css");
+/* Full scaffold required only once HTML entry exists (allows CSS/assets steps first). */
+const siteStarted = exists("index.html");
 
 if (siteStarted) {
   [

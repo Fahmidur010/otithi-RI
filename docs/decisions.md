@@ -26,3 +26,4 @@ During `/setup`, collect questions from product, user flow, stack enrichment, an
 | R8 (D1) | Header/footer = **duplicate HTML** across pages (no include system) | 2026-11-25 | architecture | Maintain consistently by hand |
 | R9 (D2) | Non-sample destination/festival cards = **display-only** (no link to Sylhet/Nobanno samples) | 2026-11-25 | product, USER_FLOW, architecture | Only Sylhet + Nobanno open detail |
 | R10 (D3) | Canonical demo contact locked from live homepage | 2026-11-25 | product, architecture | Email `otithi.support@brac.net`; phones `+8809610800700`, `+8801332550542`; address BRAC Tower 65, Bir Uttam A.K. Khandakar Road, Mohakhali, Dhaka 1212 |
+| R11 | Fonts: Fraunces (EN display), Source Sans 3 (EN body/UI), Noto Sans Bengali (BN) | 2026-11-25 | DESIGN_SYSTEM, tokens.css, phase-site-foundation | Locked at site-foundation plan clarify |
