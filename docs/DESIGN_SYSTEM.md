@@ -55,6 +55,7 @@ Filled during `/setup` Stage 7 (design wing): **Visual direction** + product + u
 | `--color-muted` | warm gray | Secondary text |
 | `--color-surface` | warm off-white / cream paper | Page background (not cold gray SaaS white) |
 | `--color-surface-elevated` | slightly deeper warm surface | Booking step panel, sticky price band |
+| `--color-surface-glass` | `color-mix` of surface @ 92% | Sticky header (translucent over content) |
 
 Do not introduce purple, neon, or cool gray corporate palettes.
 
