@@ -4,9 +4,11 @@
 
 Filled / refreshed by `/map-project`. No Owner gate required to create or use.
 
-**Status:** empty | current | stale  
+**Status:** stale  
 **Last mapped:** —  
-**Confidence:** high | mixed | low  
+**Confidence:** low  
+
+> Marked stale 2026-11-25 — `site-foundation` added `index.html` / `about.html` + `assets/{css,js,images}` entrypoints; run `/map-project refresh` when useful.  
 
 ## When Status is stale
 

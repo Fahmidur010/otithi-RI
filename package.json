@@ -1,7 +1,7 @@
 {
   "name": "otithi-reimagined",
   "version": "1.0.0",
-  "description": "",
+  "description": "Otithi redesign presentation — static HTML/CSS. npm run check · npm run preview",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -9,7 +9,8 @@
   "scripts": {
     "check": "node scripts/static-check.js",
     "build": "npm run check",
-    "test": "npm run check"
+    "test": "npm run check",
+    "preview": "npx --yes serve . -p 4173"
   },
   "keywords": [],
   "author": "",

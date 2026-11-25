@@ -1,0 +1,79 @@
+/**
+ * Otithi design tokens — brand, type, space.
+ * Fonts: Fraunces (EN display), Source Sans 3 (EN UI), Noto Sans Bengali (BN).
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+:root {
+  /* Brand (locked) */
+  --color-primary: #8c1733;
+  --color-primary-hover: #6e1228;
+  --color-accent: #ecaa1d;
+
+  /* Ink & surfaces */
+  --color-ink: #1a1214;
+  --color-muted: #5c5356;
+  --color-surface: #f7f2eb;
+  --color-surface-elevated: #efe6db;
+  --color-surface-glass: color-mix(in srgb, var(--color-surface) 92%, transparent);
+  --color-on-primary: #fff8f5;
+  --color-border: #d9cfc4;
+
+  /* Typography */
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-bn: "Noto Sans Bengali", "Nirmala UI", sans-serif;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.75rem;
+  --text-brand: clamp(2.5rem, 6vw, 4rem);
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.55;
+
+  /* Space */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  --page-pad: clamp(1rem, 4vw, 2.5rem);
+  --content-max: 72rem;
+  --measure: 40rem;
+
+  /* Radius & elevation */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --shadow-soft: 0 1px 0 rgb(26 18 20 / 6%);
+
+  /* Motion */
+  --motion-fast: 180ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Chrome */
+  --header-height: 4.25rem;
+  --sari-rule: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-primary) 42%,
+    var(--color-accent) 100%
+  );
+}
+
+/* When document is Bengali, prefer BN face for body text */
+html[lang="bn"] {
+  --font-body: var(--font-bn);
+}
