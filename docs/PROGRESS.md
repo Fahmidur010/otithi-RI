@@ -84,9 +84,7 @@ Offered at `/setup` Finish (Connect now / Skip). Re-run `/github-connect` anytim
 ```text
 GitHub: connected — Fahmidur010/otithi-RI (origin) — 2026-11-25
 GitHub workflow: gitflow — 2026-11-25
-GitHub: skipped at setup — YYYY-MM-DD
-GitHub PR: update [phase N step S] → main — branch … — status merged — date
-GitHub PR: update feature/phase-slug → develop — status merged — date
+GitHub PR: update feature/phase-site-foundation → develop — status merged — 2026-11-25
 GitHub: release promoted — develop → release — date
 GitHub: main promoted — release → main — tag vX.Y.Z — date
 GitHub: hotfix login-timeout → release + develop — status merged — date
