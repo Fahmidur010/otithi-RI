@@ -41,7 +41,10 @@ if (siteStarted) {
     "assets/css/tokens.css",
     "assets/css/base.css",
     "assets/css/components.css",
+    "assets/css/pages/home.css",
+    "assets/css/pages/about.css",
     "assets/js/main.js",
+    "assets/js/i18n.js",
   ].forEach(requireFile);
 }
 
@@ -65,6 +68,10 @@ if (exists("gallery.html")) {
 if (failed) {
   console.error("static-check failed");
   process.exit(1);
+}
+
+if (siteStarted && exists("assets/js/i18n.js") && exists("scripts/i18n-parity-check.js")) {
+  require("./i18n-parity-check.js");
 }
 
 console.log("static-check ok");

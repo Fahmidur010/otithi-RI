@@ -61,6 +61,8 @@
 
   /* Motion */
   --motion-fast: 180ms;
+  --motion-medium: 280ms;
+  --motion-hero: 800ms;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 
   /* Chrome */

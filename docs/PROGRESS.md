@@ -11,13 +11,13 @@ Phasestep progress tracker. Update during builds; `/complete-phase` marks phases
 Rolling snapshot for mid-session resume. **Overwrite** the fenced block on each material gate (`/build-phase` → intent → `/verify-phase` → `/refine-phase` → `/complete-phase`). Do not append history here — use **Session log** for that.
 
 ```text
-Phase: site-foundation — Site foundation
-Step: —
-Status: complete
-Verified steps: all (1–6)
-Open rejects / fails: none
-Evidence: owner_uat + playwright-cli
-Next: /plan-phase home-about (and/or /pr-step update; GitFlow may then /pr-step release)
+Phase: home-about — Home & About
+Step: Home redesign absorb — Living host calendar
+Status: awaiting-verify
+Verified steps: 1–5 (pre-refresh); redesign built, check green
+Open rejects / fails: none (Owner accepted Living host calendar)
+Evidence: mixed (playwright-cli + buildCommand); Owner UAT pending
+Next: Owner review Home → /verify-phase or /audit-ds home-about
 Updated: 2026-11-25
 ```
 
@@ -60,6 +60,7 @@ Workflow mode: sole
 | Date | Lane (library/guideline/owner) | Id | Action | Provenance (URL) |
 |------|--------------------------------|-----|--------|------------------|
 | 2026-11-25 | owner | visual-direction | Accepted hybrid A+C; Home composed hero (image leads section, not full viewport) | docs/DESIGN_SYSTEM.md |
+| 2026-11-25 | owner | visual-direction | Refresh — Living host calendar (multi-image hero, season band, offer cards, motion) | docs/DESIGN_SYSTEM.md |
 | 2026-11-25 | library | none | Owner picked none — owner-custom CSS | — |
 | 2026-11-25 | guideline | none | Owner skipped catalog guidelines | — |
 
@@ -114,7 +115,7 @@ Status: `[ ]` not started · `[~]` in progress · `[x]` done
 - [x] complete — 2026-11-25 (steps 1–6 verified; audit-ds + audit-phase clean)
 
 ### home-about — Home & About
-- [ ] not started
+- [~] in progress — all steps 1–5 verified; awaiting audits (`feature/phase-home-about`)
 
 ### destinations-book — Destinations + Book & Sylhet
 - [ ] not started

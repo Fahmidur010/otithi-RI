@@ -69,6 +69,21 @@
   border-color: var(--color-border);
 }
 
+.btn.is-unavailable {
+  color: var(--color-muted);
+  border-color: var(--color-border);
+  background: var(--color-surface-elevated);
+  cursor: default;
+  opacity: 0.78;
+  text-decoration: none;
+}
+
+.btn.is-unavailable:hover {
+  color: var(--color-muted);
+  border-color: var(--color-border);
+  background: var(--color-surface-elevated);
+}
+
 /* —— Site header —— */
 .site-header {
   position: sticky;

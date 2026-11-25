@@ -30,6 +30,11 @@ Filled lightly at `/setup` (seed) and grown when `/verify-phase` or `/audit-phas
 | Mobile nav + EN/BN chrome | Narrow viewport menu toggle; BN/EN language switch | Owner browser UAT | verify | site-foundation step 5 (V1–V2) |
 | Local preview server | `npm run preview` → http://localhost:4173 | buildCommand + Owner browser | verify | site-foundation step 6 (V1–V2) |
 | Site-foundation chrome smoke | Preview Home→About; BN/EN; mobile nav open + Escape | Playwright CLI against :4173 | audit | After `npm run preview`; favicon 404 is unrelated noise |
+| Home composed hero | Open `/`; confirm brand+promise+CTAs+image panel; About CTA; Dest/Fest unavailable | Playwright CLI + Owner UAT | verify | home-about step 1 (V1–V2) |
+| Home experiences + testimonials | Scroll Home; 3 matched experiences + alts; 2 testimonials; crop hides Explore chrome | Playwright CLI + Owner UAT | verify | home-about step 2 (V1–V3) |
+| About page content | Open about.html; name + CBT + impact; no Read More / placeholder | Playwright CLI + Owner UAT | verify | home-about step 3 (V1–V2) |
+| Home/About i18n | `npm run check` parity; Home BN; About BN→EN | buildCommand + Playwright CLI + Owner UAT | verify | home-about step 4 (V1–V3) |
+| Home/About responsive | Home+About @ ~390px no overflow; mobile nav; desktop spot-check; `npm run check` | Playwright CLI + buildCommand + Owner UAT | verify | home-about step 5 (V1–V2) |
 
 ## Rules
 

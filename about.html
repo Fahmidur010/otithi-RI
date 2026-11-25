@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/tokens.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages/about.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -112,14 +113,80 @@
         </div>
       </header>
 
-      <main id="main" class="page__main">
-        <div class="container stack">
-          <h1 class="section-title" data-i18n="about.title">About</h1>
-          <p class="placeholder-note" data-i18n="about.placeholder">
-            Otithi’s full story — name, community-based tourism, and impact — will land
-            in the next build phase. This page shares the site chrome with Home for
-            now.
-          </p>
+      <main id="main" class="page__main about-main">
+        <div class="container about-layout">
+          <div class="about-layout__copy">
+            <header class="about-intro">
+              <h1 class="section-title" data-i18n="about.title">About Otithi</h1>
+              <p class="about-intro__lede" data-i18n="about.lede">
+                BRAC’s community-based tourism initiative — travel that welcomes you as a
+                guest and strengthens host communities.
+              </p>
+            </header>
+
+            <div class="about-sections">
+              <section class="about-section" aria-labelledby="about-name-title">
+                <h2 id="about-name-title" class="about-section__title" data-i18n="about.name.title">
+                  The name
+                </h2>
+                <p data-i18n="about.name.body">
+                  “Otithi” is the Bengali word for guest — a word of deep hospitality in
+                  Bengali households. The initiative invites travelers into that spirit:
+                  not as tourists passing through, but as guests welcomed by host
+                  communities across Bangladesh.
+                </p>
+              </section>
+
+              <section class="about-section" aria-labelledby="about-why-title">
+                <h2 id="about-why-title" class="about-section__title" data-i18n="about.why.title">
+                  Why community-based tourism
+                </h2>
+                <p data-i18n="about.why.body1">
+                  Otithi offers guided journeys that showcase cultural heritage and natural
+                  landscapes — popular places and quieter ones alike — with logistics handled
+                  so guests can focus on people and place.
+                </p>
+                <p data-i18n="about.why.body2">
+                  Unlike extractive commercial tourism, each visit is designed so hosts are
+                  paid directly and traditions stay living practice, not scenery. The model
+                  was shaped through research with travelers, operators, and community
+                  partners.
+                </p>
+              </section>
+
+              <section class="about-section" aria-labelledby="about-impact-title">
+                <h2
+                  id="about-impact-title"
+                  class="about-section__title"
+                  data-i18n="about.impact.title"
+                >
+                  Impact
+                </h2>
+                <p data-i18n="about.impact.body">
+                  Travel here is framed as a way to create livelihoods, support local jobs,
+                  and strengthen community economies — while guests experience authentic
+                  cultural immersion and responsible hospitality.
+                </p>
+              </section>
+            </div>
+
+            <p class="about-actions cluster">
+              <a class="btn btn--primary" href="index.html" data-i18n="about.cta.home"
+                >Back to Home</a
+              >
+            </p>
+          </div>
+
+          <figure class="about-layout__media">
+            <img
+              class="about-layout__img"
+              src="assets/images/community-scene-02.jpg"
+              alt="Guests walking a sunlit forest path in Madhupur"
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+          </figure>
         </div>
       </main>
 

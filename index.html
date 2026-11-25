@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/tokens.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages/home.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -108,15 +109,510 @@
         </div>
       </header>
 
-      <main id="main" class="page__main">
-        <div class="container stack">
-          <h1 class="section-title" data-i18n="home.title">Home</h1>
-          <p class="placeholder-note" data-i18n="home.placeholder">
-            Welcome — the full Home story (composed hero, experiences, and clear paths
-            into Destinations and Festivals) arrives in the next build phase. For now,
-            explore About and the shared site chrome.
-          </p>
-        </div>
+      <main id="main" class="page__main home-main">
+        <section class="hero-living" aria-labelledby="home-hero-title">
+          <div class="hero-living__main">
+            <div class="hero-living__copy">
+              <p class="hero-living__brand" data-i18n="brand">Otithi</p>
+              <h1 id="home-hero-title" class="hero-living__title" data-i18n="home.hero.title">
+                Travel as a guest. Leave host communities stronger.
+              </h1>
+              <p class="hero-living__support" data-i18n="home.hero.support">
+                Community-based tourism with BRAC — authentic cultural immersion, guided
+                logistics, and journeys that pay hosts directly.
+              </p>
+              <div class="hero-living__actions">
+                <a class="btn btn--primary" href="#home-offers-title" data-i18n="home.cta.browse"
+                  >Browse tours &amp; festivals</a
+                >
+                <a class="hero-living__about" href="about.html" data-i18n="home.cta.about"
+                  >About Otithi</a
+                >
+              </div>
+            </div>
+            <div
+              class="hero-living__stage"
+              data-hero-slideshow
+              aria-roledescription="carousel"
+              aria-label="Host community photography"
+            >
+              <div class="hero-living__frame">
+                <div class="hero-living__slides">
+                  <figure class="hero-living__slide is-active" data-hero-slide data-scene="0">
+                    <img
+                      class="hero-living__img"
+                      src="assets/images/home-slider-01.jpg"
+                      alt="Guests and hosts sharing a community-based travel moment in Bangladesh"
+                      width="1200"
+                      height="900"
+                      fetchpriority="high"
+                    />
+                  </figure>
+                  <figure class="hero-living__slide" data-hero-slide data-scene="1">
+                    <img
+                      class="hero-living__img hero-living__img--sylhet"
+                      src="assets/images/hero-sylhet-banner.jpg"
+                      alt="Hosts performing among Sylhet tea gardens"
+                      width="1200"
+                      height="900"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <figure class="hero-living__slide" data-hero-slide data-scene="2">
+                    <img
+                      class="hero-living__img hero-living__img--path"
+                      src="assets/images/community-scene-02.jpg"
+                      alt="Guests walking a sunlit forest path in Madhupur"
+                      width="1200"
+                      height="900"
+                      loading="lazy"
+                    />
+                  </figure>
+                </div>
+                <div class="hero-living__overlay" aria-hidden="true"></div>
+                <div class="hero-living__scenes" role="group" aria-label="Choose a scene">
+                  <button
+                    type="button"
+                    class="hero-living__scene is-active"
+                    data-hero-scene
+                    aria-current="true"
+                  >
+                    <span class="hero-living__scene-label" data-i18n="home.scene1"
+                      >Host welcome</span
+                    >
+                    <span class="hero-living__scene-bar" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="hero-living__scene" data-hero-scene>
+                    <span class="hero-living__scene-label" data-i18n="home.scene2"
+                      >Sylhet gardens</span
+                    >
+                    <span class="hero-living__scene-bar" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="hero-living__scene" data-hero-scene>
+                    <span class="hero-living__scene-label" data-i18n="home.scene3"
+                      >Madhupur paths</span
+                    >
+                    <span class="hero-living__scene-bar" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-living__glimpse" aria-labelledby="hero-glimpse-title">
+            <h2 id="hero-glimpse-title" class="hero-living__glimpse-title" data-i18n="home.glimpse.title">
+              Starting soon
+            </h2>
+            <ul class="hero-glimpse">
+              <li>
+                <a
+                  class="hero-glimpse__item hero-glimpse__item--tour"
+                  href="#home-offers-title"
+                  data-hero-jump="1"
+                >
+                  <img
+                    class="hero-glimpse__thumb hero-glimpse__thumb--sylhet"
+                    src="assets/images/hero-sylhet-banner.jpg"
+                    alt=""
+                    width="120"
+                    height="90"
+                    loading="lazy"
+                  />
+                  <span class="hero-glimpse__text">
+                    <span class="hero-glimpse__kind" data-i18n="home.offer.kind.tour">Tour</span>
+                    <span class="hero-glimpse__name" data-i18n="home.offer1.title"
+                      >Sylhet scenic retreat</span
+                    >
+                    <span class="hero-glimpse__meta"
+                      ><span data-i18n="home.offer.seats">Seats left</span> 6 · ৳12,500</span
+                    >
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hero-glimpse__item hero-glimpse__item--festival"
+                  href="#home-offers-title"
+                  data-hero-jump="0"
+                >
+                  <img
+                    class="hero-glimpse__thumb hero-glimpse__thumb--sundarbans"
+                    src="assets/images/community-scene-01.jpg"
+                    alt=""
+                    width="120"
+                    height="90"
+                    loading="lazy"
+                  />
+                  <span class="hero-glimpse__text">
+                    <span class="hero-glimpse__kind" data-i18n="home.offer.kind.festival"
+                      >Festival</span
+                    >
+                    <span class="hero-glimpse__name" data-i18n="home.offer2.title"
+                      >Nobanno Utshob</span
+                    >
+                    <span class="hero-glimpse__meta"
+                      ><span data-i18n="home.offer.seats">Seats left</span> 12 · ৳3,500</span
+                    >
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hero-glimpse__item hero-glimpse__item--tour"
+                  href="#home-offers-title"
+                  data-hero-jump="2"
+                >
+                  <img
+                    class="hero-glimpse__thumb hero-glimpse__thumb--path"
+                    src="assets/images/community-scene-02.jpg"
+                    alt=""
+                    width="120"
+                    height="90"
+                    loading="lazy"
+                  />
+                  <span class="hero-glimpse__text">
+                    <span class="hero-glimpse__kind" data-i18n="home.offer.kind.tour">Tour</span>
+                    <span class="hero-glimpse__name" data-i18n="home.offer3.title"
+                      >Madhupur forest welcome</span
+                    >
+                    <span class="hero-glimpse__meta"
+                      ><span data-i18n="home.offer.seats">Seats left</span> 8 · ৳8,500</span
+                    >
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <section
+          class="home-section home-now"
+          aria-labelledby="home-now-title"
+          data-reveal
+        >
+          <div class="container home-now__inner">
+            <div class="home-now__when">
+              <p class="home-now__eyebrow" data-i18n="home.now.eyebrow">Now on Otithi</p>
+              <h2 id="home-now-title" class="home-now__date" data-season-date>
+                November 2025
+              </h2>
+              <p class="home-now__season">
+                <span data-i18n="home.now.seasonLabel">Season</span>
+                <span class="home-now__season-name" data-i18n="home.now.season"
+                  >Cool season · harvest light</span
+                >
+              </p>
+            </div>
+            <p class="home-now__suggest" data-i18n="home.now.suggest">
+              Best now: tea-garden hospitality in Sylhet, forest walks in Madhupur, and
+              harvest gatherings as Nobanno season opens.
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="home-section home-offers"
+          aria-labelledby="home-offers-title"
+          data-reveal
+        >
+          <div class="container">
+            <h2 id="home-offers-title" class="section-title" data-i18n="home.offers.title">
+              Upcoming tours &amp; festivals
+            </h2>
+            <p class="home-section__lede" data-i18n="home.offers.lede">
+              Sample seats and offer prices for this presentation — not live inventory.
+              Detail pages arrive in later phases.
+            </p>
+            <ul class="offer-grid">
+              <li>
+                <article class="offer-card offer-card--tour">
+                  <figure class="offer-card__media">
+                    <img
+                      class="offer-card__img offer-card__img--sylhet"
+                      src="assets/images/hero-sylhet-banner.jpg"
+                      alt=""
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="offer-card__body">
+                    <p class="offer-card__kind" data-i18n="home.offer.kind.tour">Tour</p>
+                    <h3 data-i18n="home.offer1.title">Sylhet scenic retreat</h3>
+                    <p class="offer-card__meta" data-i18n="home.offer1.meta">
+                      Tea gardens · 2–3 days
+                    </p>
+                    <dl class="offer-card__stats">
+                      <div>
+                        <dt data-i18n="home.offer.seats">Seats left</dt>
+                        <dd>6</dd>
+                      </div>
+                      <div>
+                        <dt data-i18n="home.offer.price">From</dt>
+                        <dd>৳12,500</dd>
+                      </div>
+                    </dl>
+                    <p class="offer-card__cta">
+                      <span
+                        class="btn btn--secondary is-unavailable"
+                        aria-disabled="true"
+                        title="Coming in a later phase"
+                        data-i18n="home.offer.cta"
+                        >Details soon</span
+                      >
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="offer-card offer-card--festival">
+                  <figure class="offer-card__media">
+                    <img
+                      class="offer-card__img offer-card__img--sundarbans"
+                      src="assets/images/community-scene-01.jpg"
+                      alt=""
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="offer-card__body">
+                    <p class="offer-card__kind" data-i18n="home.offer.kind.festival">
+                      Festival
+                    </p>
+                    <h3 data-i18n="home.offer2.title">Nobanno Utshob</h3>
+                    <p class="offer-card__meta" data-i18n="home.offer2.meta">
+                      Harvest gathering · seasonal
+                    </p>
+                    <dl class="offer-card__stats">
+                      <div>
+                        <dt data-i18n="home.offer.seats">Seats left</dt>
+                        <dd>12</dd>
+                      </div>
+                      <div>
+                        <dt data-i18n="home.offer.price">From</dt>
+                        <dd>৳3,500</dd>
+                      </div>
+                    </dl>
+                    <p class="offer-card__cta">
+                      <span
+                        class="btn btn--secondary is-unavailable"
+                        aria-disabled="true"
+                        title="Coming in a later phase"
+                        data-i18n="home.offer.cta"
+                        >Details soon</span
+                      >
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="offer-card offer-card--tour">
+                  <figure class="offer-card__media">
+                    <img
+                      class="offer-card__img offer-card__img--path"
+                      src="assets/images/community-scene-02.jpg"
+                      alt=""
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="offer-card__body">
+                    <p class="offer-card__kind" data-i18n="home.offer.kind.tour">Tour</p>
+                    <h3 data-i18n="home.offer3.title">Madhupur forest welcome</h3>
+                    <p class="offer-card__meta" data-i18n="home.offer3.meta">
+                      Forest paths · day journey
+                    </p>
+                    <dl class="offer-card__stats">
+                      <div>
+                        <dt data-i18n="home.offer.seats">Seats left</dt>
+                        <dd>8</dd>
+                      </div>
+                      <div>
+                        <dt data-i18n="home.offer.price">From</dt>
+                        <dd>৳8,500</dd>
+                      </div>
+                    </dl>
+                    <p class="offer-card__cta">
+                      <span
+                        class="btn btn--secondary is-unavailable"
+                        aria-disabled="true"
+                        title="Coming in a later phase"
+                        data-i18n="home.offer.cta"
+                        >Details soon</span
+                      >
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="offer-card offer-card--tour">
+                  <figure class="offer-card__media">
+                    <img
+                      class="offer-card__img"
+                      src="assets/images/home-slider-01.jpg"
+                      alt=""
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="offer-card__body">
+                    <p class="offer-card__kind" data-i18n="home.offer.kind.tour">Tour</p>
+                    <h3 data-i18n="home.offer4.title">Sundarbans village journey</h3>
+                    <p class="offer-card__meta" data-i18n="home.offer4.meta">
+                      Riverside hosts · multi-day
+                    </p>
+                    <dl class="offer-card__stats">
+                      <div>
+                        <dt data-i18n="home.offer.seats">Seats left</dt>
+                        <dd>4</dd>
+                      </div>
+                      <div>
+                        <dt data-i18n="home.offer.price">From</dt>
+                        <dd>৳18,000</dd>
+                      </div>
+                    </dl>
+                    <p class="offer-card__cta">
+                      <span
+                        class="btn btn--secondary is-unavailable"
+                        aria-disabled="true"
+                        title="Coming in a later phase"
+                        data-i18n="home.offer.cta"
+                        >Details soon</span
+                      >
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          class="home-section home-experiences"
+          aria-labelledby="home-experiences-title"
+          data-reveal
+        >
+          <div class="container">
+            <h2 id="home-experiences-title" class="section-title" data-i18n="home.experiences.title">
+              Experiences with hosts
+            </h2>
+            <p class="home-section__lede" data-i18n="home.experiences.lede">
+              Share music, forest paths, and village life with host communities across
+              Bangladesh.
+            </p>
+            <ul class="experience-list">
+              <li class="experience-item">
+                <figure class="experience-item__media">
+                  <img
+                    class="experience-item__img experience-item__img--sundarbans"
+                    src="assets/images/community-scene-01.jpg"
+                    alt="Thatched community hut among palm trees in the Sundarbans"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="experience-item__body">
+                  <h3 data-i18n="home.exp1.title">Sundarbans village journey</h3>
+                  <p data-i18n="home.exp1.body">
+                    Journey through riverside villages and discover life along the
+                    Sundarbans’ waterways. Meet local communities, take part in Cha Chokro,
+                    and listen to storytelling sessions led by the Gunin.
+                  </p>
+                </div>
+              </li>
+              <li class="experience-item">
+                <figure class="experience-item__media">
+                  <img
+                    class="experience-item__img experience-item__img--sylhet"
+                    src="assets/images/hero-sylhet-banner.jpg"
+                    alt="Hosts performing a traditional dance among Sylhet tea gardens"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="experience-item__body">
+                  <h3 data-i18n="home.exp2.title">Sylhet cultural performance</h3>
+                  <p data-i18n="home.exp2.body">
+                    Join a community-led cultural performance among the tea gardens —
+                    music, dance, and hospitality that welcomes guests into Sylhet’s living
+                    traditions.
+                  </p>
+                </div>
+              </li>
+              <li class="experience-item">
+                <figure class="experience-item__media">
+                  <img
+                    class="experience-item__img experience-item__img--madhupur"
+                    src="assets/images/community-scene-02.jpg"
+                    alt="Guests walking a sunlit forest path in Madhupur"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="experience-item__body">
+                  <h3 data-i18n="home.exp3.title">Madhupur forest welcome</h3>
+                  <p data-i18n="home.exp3.body">
+                    Walk shaded forest paths with local hosts in Madhupur — a quieter pace of
+                    travel shaped by community hospitality, nature, and shared time on the
+                    trail.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          class="home-section home-testimonials"
+          aria-labelledby="home-testimonials-title"
+          data-reveal
+        >
+          <div class="container">
+            <h2
+              id="home-testimonials-title"
+              class="section-title"
+              data-i18n="home.testimonials.title"
+            >
+              What visitors say
+            </h2>
+            <ul class="testimonial-list">
+              <li class="testimonial-item">
+                <blockquote>
+                  <p data-i18n="home.t1.quote">
+                    The guides were so nice and welcoming. I don’t think I have ever had such
+                    nice tour guides — they were fantastic.
+                  </p>
+                  <footer>
+                    <cite data-i18n="home.t1.cite">Monty Cross</cite>
+                    <span class="testimonial-item__meta" data-i18n="home.t1.meta"
+                      >United Kingdom · Sreemangal Immersive Experience</span
+                    >
+                  </footer>
+                </blockquote>
+              </li>
+              <li class="testimonial-item">
+                <blockquote>
+                  <p data-i18n="home.t2.quote">
+                    We had a new experience in the tea gardens where they prepared a dance
+                    for us. This felt personal and special.
+                  </p>
+                  <footer>
+                    <cite data-i18n="home.t2.cite">Alison Cross</cite>
+                    <span class="testimonial-item__meta" data-i18n="home.t2.meta"
+                      >United Kingdom · Sylhet Scenic Retreat</span
+                    >
+                  </footer>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
 
       <footer class="site-footer">

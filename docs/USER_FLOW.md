@@ -22,8 +22,8 @@ Derived from `docs/product.md`. During `/setup`, Owner refinements here **must**
 
 ### Flow A — Discover & orient (Home → key areas)
 
-1. Land on **Home** (promise + CTAs; no empty sections).
-2. Choose a path: **Destinations + Book**, **Festivals**, **About**, or **Gallery**.
+1. Land on **Home** (multi-image hero + promise; season/now band; upcoming tour/festival offer teasers with seats + sample price; host experiences; guest voices).
+2. Choose a path: **About** (live), or later **Destinations + Book** / **Festivals** / **Gallery** (offer teasers stay non-navigating until those pages ship).
 3. Optionally switch **EN ↔ BN** at any time; content for the current page updates.
 
 ```mermaid
